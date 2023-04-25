@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- link css -->
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="box-input">
+      <form>
+        <div class="items-input">
+          <label for="day">Day</label>
+          <input type="number" id="day" placeholder="DD">
+          <small></small>
+        </div>
+        <div class="items-input">
+          <label for="month">month</label>
+          <input type="number" id="month" placeholder="MM">
+          <small></small>
+        </div>
+        <div class="items-input">
+          <label for="year">year</label>
+          <input type="number" id="year" placeholder="YYYY">
+          <small></small>
+        </div>
+      </form>
+      <div class="box-btn">
+        <button type="submit" id="submit-btn"><img src="/assets/images/icon-arrow.svg" alt=""></button>
+      </div>
+    </section>
+    <section>
+      <div class="output">
+        <h1><span id="YY">--</span>years</h1>
+        <h1><span id="MM">--</span>months</h1>
+        <h1><span id="DD">--</span>days</h1>
+      </div>
+    </section>
+  </main>
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/sorrasak-code">Sorrasak Abrueang</a>.
+  </div>
+  <!-- link javascript -->
+  <script src="index.js"></script>
+</body>
+</html>

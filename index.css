@@ -1,0 +1,186 @@
+:root{
+  /* ### Primary */
+
+--Purple: hsl(259, 100%, 65%);
+--Light-red: hsl(0, 100%, 67%);
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+*{
+  font-family: 'Poppins' ,sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--Light-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container{
+  background-color: var(--White);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 1rem 1rem 10rem 1rem;
+  width: 90%;
+  max-width: 700px;
+  transition: 0.5s;
+}
+.container .box-input{
+  display: flex;
+  border-bottom: 1px solid var(--Light-grey);
+  position: relative;
+  padding: 0 0 4rem;
+}
+.container .box-input form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  transition: 0.5s;
+}
+.box-input .items-input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+.box-input .items-input label{
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+  color: var(--Smokey-grey);
+  width: 100%;
+}
+.box-input .items-input input{
+  width: 80px;
+  color: var(--Off-black);
+  padding: 0.5rem .8rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--Light-grey);
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.items-input input:hover{
+  border: 1px solid var(--Purple);
+}
+.items-input input::placeholder{
+  font-size: 1rem;
+  font-weight: 800;
+}
+small{
+  color: red;
+  font-size: 0.5rem;
+  font-weight: 400;
+  padding-top: 0.3rem;
+}
+.box-input .box-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box-input .box-btn button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  padding: 1.2rem;
+  background-color: var(--Purple);
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.box-input .box-btn button:hover{
+  background-color: var(--Off-black);
+}
+.box-input .box-btn button img{
+  width: 35px;
+  aspect-ratio: 1/1;
+}
+.output{
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.output h1 span {
+  color: var(--Purple);
+  padding-right: 0.5rem;
+}
+.output h1{
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  transition: 0.3s;
+}
+.attribution{
+  padding-top: 3rem;
+}
+small{
+  height: 20px;
+}
+
+@media (min-width : 520px){
+  .box-input .items-input input{
+    width: 100%;
+    font-size: 1.3rem;
+  }
+  .items-input input::placeholder{
+    font-size: 1.3rem;
+  }
+  .container .box-input form{
+    display: flex;
+    align-items: center;
+    width: 80%;
+  }
+  .output h1{
+    font-size: 4rem;
+  }
+}
+@media (min-width: 710px){
+  .container{
+    padding: 3rem 4rem;
+  }
+  .container .box-input form{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    
+  }
+  .box-input .box-btn button{
+    left: 95%;
+  }
+  .box-input .items-input input{
+    width: 100%;
+    font-size: 1.6rem;
+  }
+  .items-input input::placeholder{
+    font-size: 1.6rem;
+  }
+  .output h1{
+    font-size: 5rem;
+  }
+}
